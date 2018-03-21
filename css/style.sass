@@ -1,0 +1,490 @@
+* 
+	margin: 0;
+body
+	-webkit-font-smoothing: antialiased;
+	background-color: #111;
+
+h1, h3, p, h2, li, h4, a
+	font-family: Montserrat,Helvetica,sans-serif
+	text-decoration: none
+	font-weight: 100
+	color: #fff
+/* MENU */
+
+
+
+/* HEADER */
+
+.top-header
+	width: 100%
+	height: 650px
+	background: url('http://123hdwallpaperpic.com/download/20150528/montana-mountains-wallpaper-2560x1600.jpg')
+	background-size: cover
+	background-position: center
+	.row
+		width: 100%
+		height: 650px
+		background-color: rgba(1,1,1,0.3)
+		margin: 0
+		.container
+			.col-md-12
+				padding: 45px 150px
+				h1
+					text-align: center
+					font-size: 80px
+					line-height: 85px
+					font-weight: 700
+					margin-bottom: 70px
+				button
+					margin: auto
+					background-color: #FBA746
+					border: none
+					padding: 10px 20px 10px 20px 
+					outline: 0
+					transition: filter .25s ease
+					p
+						font-size: 18px
+					a
+						color: #fff
+					&:hover
+						filter: brightness(110%)
+			.menu
+				width: 100%
+				height: 60px
+				border-bottom: 1px solid #fff
+				.col-md-7
+					padding-left: 0
+				.logo
+					h1
+						color: #fff	
+						font-weight: 700
+						font-size: 40px
+						margin: 0
+				.col-md-5
+					padding-right: 0
+					h3
+						font-size: 14px
+						display: inline-block
+						color: #fff	
+						margin: 18px
+						margin-right: 0px
+						margin-left: 19px
+						margin-top: 20px
+						cursor: pointer
+						transition: .25s ease color
+					a
+						color: #fff
+						&:hover
+							color: #FFB6B9
+
+
+.m-nav
+	margin: 19px 0px
+	float: right
+	display: none
+	.bar1, .bar2 
+		width: 25px
+		height: 2px
+		background-color: white
+		margin: 6px 0
+#menu-toggle
+	width: 220px
+	height: 100vh
+	background-color: #FC6E5E
+	background-image: linear-gradient(90deg, #FBA746, #FFAA64, #f69560);
+	z-index: 999
+	position: fixed
+	top: 0
+	right: -100%
+	bottom: 0
+	transition: 0.9s ease 
+	.menu
+		border: 0
+	.menu 
+		h3 
+			color: #fff
+			text-align: left
+			margin: 25px 0px 25px 60px;
+			font-weight: 400
+			cursor: pointer
+		a
+			color: #fff
+.o-nav
+	width: 40px
+	position: relative
+	top: 49px
+	left: 15px
+	cursor: pointer
+	.o-bar1 
+    	transform: rotate(-45deg) translate(2px, -3.5px)
+	.o-bar2  
+    	transform: rotate(44deg) translate(-8.5px, -8px)
+
+
+
+
+.o-bar1 ,.o-bar2 
+	width: 25px;
+	height: 2px;
+	background-color: #fff;
+	margin: 6px 0;
+
+// HEADER //
+
+// SECTION //
+
+.features
+	width: 100%
+	height: 100%
+	background-color: #f5f5f5
+	padding-bottom: 50px
+	.row
+		width: 100%
+		margin-left: 0
+		margin-right: 0
+		h1
+			text-align: center
+			color: #111
+			margin-bottom: 0
+			font-weight: 500
+		.container
+			.col-md-4 
+				margin-top: 30px
+				//border: 1px solid blue
+				.info
+					height: 100%
+					//border: 1px solid #111
+					margin: 20px 0
+					h2
+						color: #111
+						margin: 10px 0
+					p
+						color: #111
+						margin: 0 25px
+					img
+						width: 110px
+
+// SECTION//
+
+
+// PORTFOLIO //
+
+.filter_div
+	ul 
+		li 
+			display: inline-block
+#portfolio		
+	height: 670px
+	padding-bottom: 40px
+	background-color: #222
+	.container
+		padding: 0
+		.row
+			margin: 0
+			h1
+				text-align: center
+				margin-bottom: 10px
+				font-weight: 400
+			.filter_div
+				ul 
+					text-align: center
+					padding: 0
+					li 
+						display: inline-block	
+						font-size: 18px
+						margin: 10px 20px
+						cursor: pointer
+			.portfolio_item
+				display: none
+				padding: 0
+				img
+					width: 100%
+				.port_item_cont
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					background-color: rgba(0,0,0,.8)
+					text-align: center
+					padding-top: 15%
+					opacity: 0
+					transition: all .5s
+				&:hover .port_item_cont
+					opacity: 1
+					padding-top: 20%
+				h3
+					color: #fff
+					margin-bottom: 0
+					font-size: 18px
+					text-transform: uppercase
+					margin-bottom: 6px
+				h4
+					color: #999
+					margin-bottom: 8px
+				a
+					border: #FBA746 1px solid
+					padding: 2px 10px
+					display: inline-block
+					color: #FBA746
+					text-transform: uppercase
+
+.active
+	border-bottom: 1px solid #FBA746
+
+
+
+// TEAM SECTION //
+
+.team 
+	width: 100%
+	height: 550px
+	background-color: #f5f5f5
+	.container
+		.row
+			h1
+				color: #111
+				text-align: center
+			.team-1
+				border: 1px solid #f5f5f5
+				height: 100%
+				transition: all 0.3s ease
+				img
+					width: 100%
+					padding: 10px 30px 0px 30px
+				h2
+					color: #111
+					text-align: center
+					margin: 5px 0
+				h3
+					color: #FF7777
+					text-align: center
+					font-size: 15px
+					font-weight: 400
+					margin: 5px 0
+				p
+					color: #111
+					text-align: left
+					margin: 5px 5px
+				&:hover
+					border: 1px solid #FBA746
+				.nav-social
+					padding: 6px 0
+					text-align: right
+					ul 
+						width: 115px
+					ul, li 
+						padding: 0
+						margin: 0
+					li
+						display: inline-block
+						a
+							width: 30px
+							color: #FBA746
+							font-size: 20px
+							padding: 10px
+							transition: color 0.2s ease
+							text-align: center
+							&:hover
+								color: #BC5148
+
+
+// TEAM SECTION //
+
+
+// TESTIMONIALS //
+
+.testimonials
+	width: 100%
+	padding-bottom: 40px
+	.container
+		.row
+			h1
+				color: #111
+				text-align: center	
+				font-weight: 400
+			.owl-carousel
+				.owl-item
+					border: none
+				.item 
+					p
+						color: #696969
+						font-size: 24px
+						text-align: center
+						padding: 15px 20px
+						font-style: italic;
+					h3
+						color: #111
+						text-align: center
+						font-size: 25px
+						font-weight: 600
+
+				.owl-prev i, .owl-next i
+					font-size: 30px
+				.owl-nav		
+					display: block
+					button
+						outline: 0
+					.owl-prev
+						float: left
+						position: relative
+						bottom: 130px
+						right: 10px
+					.owl-next
+						float: right
+						position: relative
+						bottom: 130px
+						left: 10px
+// TESTIMONIALS //
+
+
+
+// CONTACT //
+
+.contact
+	width: 100%
+	background-color: #BC5148
+	filter: brightness(90%)
+	.container
+		.row
+			h1
+				text-align: center
+				font-weight: 400
+				margin-bottom: 15px
+			p
+				text-align: center
+
+
+			#form 
+				width: 343px
+				padding-bottom: 50px
+				margin: auto
+				.mail 
+				    width: 250px
+				    height: 52px
+				    border: 1px solid rgb(46, 49, 65)
+				    border-radius: 7px 7px 7px 7px
+				    background-color: #f5f5f5
+				    outline: 0
+				    input 
+				    	color: #fff
+				.name:focus ,.mail:focus ,.text:focus ,button:focus 
+				    border: solid 1px rgb(0,191,255)
+				button 
+				    margin-top: 20px
+				    border-radius: 7px 7px 7px 7px;
+				    border: 1px solid rgb(46, 49, 65)
+				    background-color: rgba(2, 2, 2, 0.1)
+				    outline: 0
+				    color: #fff
+				    padding: 15px 15px
+
+
+// CONTACT //
+
+
+
+
+// FOOTER //
+
+footer 
+	width: 100%
+	background-color: #f5f5f5
+	.container
+		.row
+			.col-md-12
+				p 
+					color: #111
+					float: left
+					padding: 10px 
+				.social
+					float: right
+					ul
+						li
+							padding: 4px 5px
+							display: inline-block
+							a 
+								font-size: 23px
+								color: #FBA746
+								transition: all .25s ease
+								&:hover
+									color: #BC5148
+
+// FOOTER //
+
+
+
+
+
+// MENU //
+
+.menu-fixed
+	width: 100%
+	height: 60px
+	position: fixed
+	top: 0
+	bottom: 0
+	z-index: 999
+	background-color: rgba(251, 167, 70,0.9)
+	display: none
+	.container
+		.row	
+			margin: 0
+			.col-md-7
+				padding-left: 0
+			.logo
+				h1
+					color: #fff	
+					font-weight: 700
+					font-size: 40px
+					margin: 0
+			.col-md-5
+				padding-right: 0
+				h3
+					font-size: 14px
+					display: inline-block
+					color: #fff	
+					margin: 18px
+					margin-right: 0px
+					margin-left: 19px
+					margin-top: 20px
+					cursor: pointer
+					transition: .25s ease color
+				a
+					color: #fff
+					&:hover
+						color: #FFB6B9
+
+
+.m-nav_1
+	margin: 19px 0px
+	float: right
+	display: none
+	.bar1, .bar2 
+		width: 25px
+		height: 2px
+		background-color: white
+		margin: 6px 0
+// MENU //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
